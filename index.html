@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="coupon container coupon_4" data-type="coupon5">
+    <ul class="clearfix">
+        <li>
+            <a href="//order.mi.com/user/coupon" data-log_code="20180818coupon8" data-stat-id="dbe018451ffc9ffc"
+               onclick="_msq.push(['trackEvent', '05c0a4fc878cca29-dbe018451ffc9ffc', 'javascript:void0', 'pcpid', '20180818coupon8']);"
+               target="_blank">
+                <img src="https://i8.mifile.cn/b2c-mimall-media/c7a52e60631ac103585579344da95789.png">
+            </a>
+            <div style="color: rgb(255, 84, 79);"><span>抢到啦！点击可查看优惠券</span></div>
+        </li>
+        <li><img src="https://i8.mifile.cn/b2c-mimall-media/5c0ece0a934df0a6a4a806623311a319.png">
+            <div style="color: rgb(255, 84, 79);"><span>下一场 今日11点 开启</span></div>
+        </li>
+        <li>
+            <a href="//order.mi.com/user/coupon" data-log_code="20180818coupon100" data-stat-id="8f571f0d1cb3cc4d"
+               onclick="_msq.push(['trackEvent', '05c0a4fc878cca29-8f571f0d1cb3cc4d', 'javascript:void0', 'pcpid', '20180818coupon100']);"
+               target="_blank">
+                <img src="https://i8.mifile.cn/b2c-mimall-media/8095afb73e6eb859dbf4295821dd83bb.png">
+            </a>
+            <div style="color: rgb(255, 84, 79);"><span>抢到啦！点击可查看优惠券</span></div>
+        </li>
+        <li><img src="https://i8.mifile.cn/b2c-mimall-media/776489ff5ed0ff8bc45f8f24cd77d926.png">
+            <div style="color: rgb(255, 84, 79);"><span>下一场 今日11点 开启</span></div>
+        </li>
+    </ul>
+    <div class="modal-draw" style="display: none;">
+        <a class="close" data-stat-id="fbbe1c9ded8317ca" onclick="_msq.push(['trackEvent', '05c0a4fc878cca29-fbbe1c9ded8317ca', '', 'pcpid', '']);"></a>
+        <div class="con error"><p></p>
+            <div></div>
+        </div>
+        <a class="btn" data-stat-id="ede46f65077c4313"
+           onclick="_msq.push(['trackEvent', '05c0a4fc878cca29-ede46f65077c4313', '', 'pcpid', '']);">知道了</a></div>
+    <div class="modal-msg" style="display: none;">
+        <a class="close" data-stat-id="53d8a8da4c854831" onclick="_msq.push(['trackEvent', '05c0a4fc878cca29-53d8a8da4c854831', '', 'pcpid', '']);">X</a>
+    </div>
+    <div class="modal-backdrop" style="display: none;"></div>
+</div>
+</body>
+<script>
+    var date = new Date();
+    var now = date.getTime();
+    var str = "2018/8/17 13:59:50";
+    var endDate = new Date(str);
+    var end = endDate.getTime();
+    var leftTime = end-now;
+    function countTime () {
+        var d1 = document.getElementsByClassName('coupon')[0].children[0].children[1];
+        var d3 = document.getElementsByClassName('coupon')[0].children[0].children[3];
+        for (var i=0;i<1000000;i++) {
+            setTimeout(()=>{
+                d1.click();
+            }, 100);
+            setTimeout(()=>{
+                d3.click();
+            }, 200);
+            console.log(i);
+        }
+    }
+    setTimeout(countTime, leftTime)
+</script>
+</html>
