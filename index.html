@@ -46,21 +46,22 @@
 <script>
     var date = new Date();
     var now = date.getTime();
-    var str = "2018/8/17 13:59:50";
+    var str = "2018/8/17 14:58:00";
     var endDate = new Date(str);
     var end = endDate.getTime();
     var leftTime = end-now;
     function countTime () {
         var d1 = document.getElementsByClassName('coupon')[0].children[0].children[1];
         var d3 = document.getElementsByClassName('coupon')[0].children[0].children[3];
-        for (var i=0;i<1000000;i++) {
+        for (let i = 0;i < 1000000; i++) {
             setTimeout(()=>{
                 d1.click();
+                console.log(i, 1);
             }, 100);
             setTimeout(()=>{
                 d3.click();
+                console.log(i, 3);
             }, 200);
-            console.log(i);
         }
     }
     setTimeout(countTime, leftTime)
